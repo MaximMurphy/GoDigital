@@ -4,7 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>GoDigital</title>
+    <script src="https://unpkg.com/hydra-synth"></script>
   </head>
-  <body></body>
+  <body>
+    <h1>GoDigital</h1>
+    <script>
+      // create a new hydra-synth instance
+      var hydra = new Hydra({ detectAudio: false });
+      noise(5)
+        .color(1, 1)
+        .rotate(() => (Math.PI * mouse.y) / 5000)
+        .kaleid()
+        .repeat()
+        .pixelate(1000)
+        .scrollX(0, 0.05)
+        .out();
+    </script>
+  </body>
 </html>
