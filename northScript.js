@@ -5,11 +5,11 @@ var hydra = new Hydra({ detectAudio: false });
 const mediaQuery = window.matchMedia("(min-width: 768px)");
 
 if (mediaQuery.matches) {
-  //mobile
+  //desktop
   console.log("Media Query Matched!");
   setResolution(window.innerWidth, 2100);
 } else {
-  //desktop
+  //mobile
   setResolution(window.innerWidth, 1100);
 }
 osc(20, 0.01, 1.1)

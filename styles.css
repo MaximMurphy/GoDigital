@@ -23,6 +23,9 @@ body {
 
 .container {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
 }
 
 a:link,
@@ -70,6 +73,10 @@ a:active {
 }
 
 .albumInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
   background-color: var(--bg-color);
   color: silver;
   padding: 2vw;
@@ -89,8 +96,17 @@ a:active {
   img {
     width: 500px;
     height: 500px;
-    padding-top: 5px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+  }
+
+  .albumInfo {
+    font-size: 1.5rem;
+  }
+  #footer {
+    position: absolute;
+    width: 100%;
+    top: 200vh;
+    font-size: 1.5rem;
   }
 }
 
@@ -102,7 +118,6 @@ a:active {
   img {
     width: 250px;
     height: 250px;
-    padding-top: 5px;
-    padding-bottom: 15px;
+    padding-top: 10px;
   }
 }

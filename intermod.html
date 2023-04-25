@@ -30,21 +30,35 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/hydra-synth"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.6.0/lib/p5.js"></script>
-    <title>GoDigital</title>
+    <title>Intermod</title>
   </head>
   <body>
-    <div class="animationContainer">
-      <script src="script.js" class="animation"></script>
-    </div>
     <div class="container">
+      <div class="animationContainer">
+        <script src="intermodScript.js" class="animation"></script>
+      </div>
+
       <div class="title">
         <a href="/" class="homeLink"><h1 class="titleText">GoDigital</h1></a>
       </div>
-      <div class="albumCovers">
-        <a href="./true-north.html"><img src="public/trueNorth.jpg" /></a>
-        <a href="./tears-of-joy.html"><img src="public/tearsOfJoy.jpg" /></a>
-        <a href="./intermod.html"><img src="public/intermod.jpg" /></a>
+      <div class="albumPage">
+        <a href="./intermod"><img src="public/intermod.jpg" /></a>
+      </div>
+      <div class="albumInfo">
+        <p>Tracklist:</p>
+        <ol>
+          <li>NGC 520</li>
+          <li>Shine On</li>
+          <li>OPTI Bounce</li>
+          <li>Software</li>
+          <li>The North Fish</li>
+          <li>Affinty</li>
+          <li>Intermod</li>
+          <li>Sic Transit Gloria Mundi</li>
+          <li>New Life</li>
+        </ol>
+        <p>November 19, 2021</p>
+        <p>9 songs, 19 minutes</p>
       </div>
       <div id="footer"></div>
       <script>
@@ -55,6 +69,7 @@
             footer.innerHTML = html;
           });
       </script>
+      <div></div>
     </div>
   </body>
 </html>
