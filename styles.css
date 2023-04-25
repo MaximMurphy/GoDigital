@@ -2,4 +2,68 @@ html,
 body {
   background-color: black;
   color: white;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  cursor: crosshair;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: whitesmoke;
+  cursor: cell;
+  text-decoration: none;
+}
+a:active {
+  color: rgb(255, 211, 130);
+  text-decoration: line-through;
+}
+
+.container {
+  position: absolute;
+}
+
+.title {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0%;
+  z-index: 2;
+  font-size: 5vw;
+}
+
+.animationContainer {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+
+.albumCovers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Desktop */
+@media (min-width: 701px) {
+  .albumCovers img {
+    width: 500px;
+    height: 500px;
+    padding-top: 10px;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 700px) {
+  .albumCovers img {
+    width: 250px;
+    height: 250px;
+    padding-top: 10px;
+  }
 }
