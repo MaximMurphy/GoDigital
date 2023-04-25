@@ -1,7 +1,19 @@
+:root,
+:root.light {
+  --bg-color: white;
+  --text-color: black;
+  --secondary-text-color: silver;
+}
+:root.dark {
+  --bg-color: black;
+  --text-color: white;
+  --secondary-text-color: silver;
+}
+
 html,
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: "Orbitron", sans-serif;
   text-align: center;
   display: flex;
@@ -9,23 +21,24 @@ body {
   cursor: crosshair;
 }
 
+.container {
+  position: absolute;
+}
+
 a:link,
 a:visited {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
 }
+
 a:hover {
-  color: whitesmoke;
+  color: var(--text-color / 2);
   cursor: cell;
   text-decoration: none;
 }
 a:active {
   color: rgb(255, 211, 130);
   text-decoration: line-through;
-}
-
-.container {
-  position: absolute;
 }
 
 .title {
@@ -49,15 +62,35 @@ a:active {
   align-items: center;
 }
 
+.albumPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.albumInfo {
+  background-color: var(--bg-color);
+  color: silver;
+  padding: 2vw;
+  border: 5px solid silver;
+  border-radius: 15px;
+}
+
+#footer {
+  color: var(--text-color);
+}
+
 /* Desktop */
 @media (min-width: 701px) {
   .title {
     font-size: 4vw;
   }
-  .albumCovers img {
+  img {
     width: 500px;
     height: 500px;
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
   }
 }
 
@@ -66,9 +99,10 @@ a:active {
   .title {
     font-size: 6vw;
   }
-  .albumCovers img {
+  img {
     width: 250px;
     height: 250px;
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
   }
 }

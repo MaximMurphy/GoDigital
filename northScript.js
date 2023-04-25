@@ -1,14 +1,15 @@
-// create a new hydra-synth instance
+// create new instance
 var hydra = new Hydra({ detectAudio: false });
 
-// Create a condition that targets viewports at least 768px wide
+// checking for screen size
 const mediaQuery = window.matchMedia("(min-width: 768px)");
-// Check if the media query is true
+
 if (mediaQuery.matches) {
-  // Then log the following message to the console
+  //mobile
   console.log("Media Query Matched!");
   setResolution(window.innerWidth, 2100);
 } else {
+  //desktop
   setResolution(window.innerWidth, 1100);
 }
 osc(20, 0.01, 1.1)

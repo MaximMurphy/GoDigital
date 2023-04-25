@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -41,15 +41,27 @@
       <div class="title">
         <a href="/" class="homeLink"><h1 class="titleText">GoDigital</h1></a>
       </div>
-      <div class="albumCovers">
+      <div class="albumPage">
         <a href="./true-north"><img src="public/trueNorth.jpg" /></a>
-        <p>tracklist:</p>
+        <div class="albumInfo">
+          <p>Tracklist:</p>
+          <ol>
+            <li>True North</li>
+            <li>Onwards</li>
+          </ol>
+          <p>February 2, 2021</p>
+          <p>2 songs, 6 minutes</p>
+        </div>
       </div>
-      <footer>
-        <p>Info</p>
-        <p>Contact</p>
-        <p>🥷🏻🌋🚉🌐</p>
-      </footer>
+      <div id="footer"></div>
+      <script>
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((html) => {
+            const footer = document.querySelector("#footer");
+            footer.innerHTML = html;
+          });
+      </script>
     </div>
   </body>
 </html>
