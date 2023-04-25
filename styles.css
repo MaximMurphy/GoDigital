@@ -33,7 +33,6 @@ a:active {
   position: sticky;
   top: 0%;
   z-index: 2;
-  font-size: 5vw;
 }
 
 .animationContainer {
@@ -52,6 +51,9 @@ a:active {
 
 /* Desktop */
 @media (min-width: 701px) {
+  .title {
+    font-size: 4vw;
+  }
   .albumCovers img {
     width: 500px;
     height: 500px;
@@ -61,6 +63,9 @@ a:active {
 
 /* Mobile */
 @media only screen and (max-width: 700px) {
+  .title {
+    font-size: 6vw;
+  }
   .albumCovers img {
     width: 250px;
     height: 250px;

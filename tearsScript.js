@@ -11,10 +11,8 @@ if (mediaQuery.matches) {
 } else {
   setResolution(window.innerWidth, 1100);
 }
-noise(10)
-  .color(1, 1)
-  .rotate(() => (Math.PI * scrollY) / 3000)
-  .kaleid()
-  .repeat()
-  .pixelate()
-  .out();
+voronoi(25, 2, 10)
+  .color(1, 1, 1)
+  .brightness(0.05)
+  .rotate(() => 0.25 * scrollY)
+  .out(o0);
