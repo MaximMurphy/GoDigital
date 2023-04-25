@@ -41,7 +41,7 @@ a:hover {
 }
 a:active {
   color: rgb(255, 211, 130);
-  text-decoration: line-through;
+  text-decoration: none;
 }
 
 .title {
@@ -93,7 +93,7 @@ a:active {
   color: silver;
   font-size: 1.5rem;
   padding: 2vw;
-  padding-bottom: 10%;
+  padding-bottom: 8%;
   border: 5px solid silver;
   border-radius: 15px;
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Orbitron:wght@700&family=Quantico:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/hydra-synth"></script>
+    <title>🥷🏻🌋🚉🌐</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="animationContainer">
+        <script src="digitalScript.js" class="animation"></script>
+      </div>
+
+      <div class="title">
+        <a href="/" class="homeLink"><h1 class="titleText">GoDigital</h1></a>
+      </div>
+      <div class="space"></div>
+      <div id="footer"></div>
+      <script>
+        fetch("footer.html")
+          .then((response) => response.text())
+          .then((html) => {
+            const footer = document.querySelector("#footer");
+            footer.innerHTML = html;
+          });
+      </script>
+      <div></div>
+    </div>
+  </body>
+</html>

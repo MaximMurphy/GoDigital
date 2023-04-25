@@ -12,16 +12,4 @@ if (mediaQuery.matches) {
   //mobile
   setResolution(window.innerWidth, 900);
 }
-osc(10, 0.1, 2)
-  .modulate(
-    noise(2, 0.1)
-      .color(1, 0.5, 1)
-      .add(gradient(2))
-      .thresh(0.5)
-      .modulateScale(osc(2), 0.2)
-  )
-  .rotate(1.57)
-  .modulateHue(osc(0.5))
-  .color(1, 1, 1)
-  .blend(o0, 0.5)
-  .out();
+osc(1).add(noise(1, 0.05)).color(0, 0, 3).colorama(0.4).out(o1);
