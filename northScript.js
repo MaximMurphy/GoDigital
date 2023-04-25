@@ -7,10 +7,10 @@ const mediaQuery = window.matchMedia("(min-width: 768px)");
 if (mediaQuery.matches) {
   //desktop
   console.log("Media Query Matched!");
-  setResolution(window.innerWidth, 2100);
+  setResolution(window.innerWidth, 2000);
 } else {
   //mobile
-  setResolution(window.innerWidth, 1100);
+  setResolution(window.innerWidth, 1135);
 }
 osc(20, 0.01, 1.1)
   .kaleid(5)

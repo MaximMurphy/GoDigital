@@ -35,7 +35,7 @@ a:visited {
 }
 
 a:hover {
-  color: var(--text-color / 2);
+  color: silver;
   cursor: cell;
   text-decoration: none;
 }
@@ -84,6 +84,20 @@ a:active {
   border-radius: 15px;
 }
 
+.friendsInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  background-color: var(--bg-color);
+  color: silver;
+  font-size: 1.5rem;
+  padding: 2vw;
+  padding-bottom: 10%;
+  border: 5px solid silver;
+  border-radius: 15px;
+}
+
 #footer {
   color: var(--text-color);
 }
@@ -103,10 +117,15 @@ a:active {
     font-size: 1.5rem;
   }
   #footer {
-    position: absolute;
-    width: 100%;
-    top: 200vh;
     font-size: 1.5rem;
+  }
+  .space {
+    margin-bottom: 10vh;
+  }
+
+  iframe {
+    width: 560px;
+    height: 1000px;
   }
 }
 
@@ -119,5 +138,10 @@ a:active {
     width: 250px;
     height: 250px;
     padding-top: 10px;
+  }
+
+  iframe {
+    width: 80vw;
+    height: 71vh;
   }
 }

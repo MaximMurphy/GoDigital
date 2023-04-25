@@ -7,10 +7,10 @@ const mediaQuery = window.matchMedia("(min-width: 768px)");
 if (mediaQuery.matches) {
   //desktop
   console.log("Media Query Matched!");
-  setResolution(window.innerWidth, 2200);
+  setResolution(window.innerWidth, 2400);
 } else {
   //mobile
-  setResolution(window.innerWidth, 1250);
+  setResolution(window.innerWidth, 1300);
 }
 noise(10)
   .color(1, 1)

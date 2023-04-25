@@ -6,10 +6,10 @@ const mediaQuery = window.matchMedia("(min-width: 768px)");
 if (mediaQuery.matches) {
   //desktop
   console.log("Media Query Matched!");
-  setResolution(window.innerWidth, 2100);
+  setResolution(window.innerWidth, 2200);
 } else {
   //mobile
-  setResolution(window.innerWidth, 1250);
+  setResolution(window.innerWidth, 1300);
 }
 shape(200, 0.607, 1.5)
   .scale(0.621, 0.49)
