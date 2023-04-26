@@ -10,7 +10,7 @@ if (mediaQuery.matches) {
   setResolution(window.innerWidth, 1200);
 } else {
   //mobile
-  setResolution(window.innerWidth, 900);
+  setResolution(window.innerWidth, 835);
 }
 osc(10, 0.1, 2)
   .modulate(

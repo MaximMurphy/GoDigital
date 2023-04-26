@@ -25,6 +25,7 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 45px;
 }
 
@@ -89,12 +90,12 @@ a:active {
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  background-color: var(--bg-color);
-  color: silver;
+  background-color: lightgrey;
+  color: black;
   font-size: 1.5rem;
   padding: 2vw;
   padding-bottom: 8%;
-  border: 5px solid silver;
+  border: 5px solid white;
   border-radius: 15px;
 }
 
@@ -127,6 +128,10 @@ a:active {
     width: 560px;
     height: 1000px;
   }
+
+  .friendsInfo {
+    font-size: 1.5rem;
+  }
 }
 
 /* Mobile */
@@ -143,5 +148,10 @@ a:active {
   iframe {
     width: 80vw;
     height: 71vh;
+  }
+
+  .friendsInfo {
+    font-size: 1.2rem;
+    width: 80%;
   }
 }
