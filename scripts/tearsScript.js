@@ -11,8 +11,9 @@ if (mediaQuery.matches) {
   //mobile
   setResolution(window.innerWidth, 1275);
 }
-voronoi(25, 2, 10)
+voronoi(25, 1, 12)
+  .pixelate(200, 200)
   .color(1, 1, 1)
   .brightness(0.05)
-  .rotate(() => 0.25 * scrollY)
+  .scrollY(() => 0.1 * scrollY)
   .out(o0);
