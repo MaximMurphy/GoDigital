@@ -21,13 +21,15 @@ navigator.mediaDevices
   .then((stream) => {
     s0.initCam(() => {
       // Start video stream
+      cameraView.srcObject = stream;
+      cameraView.play();
       video.srcObject = s0.src;
       video.play();
     });
   })
   .catch((error) => {
     // Handle the error
-    console.error(err);
+    alert(err);
   });
 
 function loop() {
