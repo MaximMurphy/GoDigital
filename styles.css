@@ -135,7 +135,7 @@ a:active {
     font-size: 1.5rem;
   }
 
-  .hiddenText {
+  .hiddenDesktop {
     display: none;
   }
 }
@@ -161,7 +161,7 @@ a:active {
     width: 80%;
   }
 
-  .hiddenText {
-    font-size: 0.4rem;
+  .hiddenMobile {
+    display: none;
   }
 }
