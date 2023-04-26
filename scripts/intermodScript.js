@@ -18,5 +18,6 @@ shape(200, 0.607, 1.5)
   .modulateScale(osc(3, 0.5), -0.852)
   .add(o0, 0.371)
   .scale(0.9)
+  .modulate(o0, () => scrollY * 0.0002)
   .scrollY(() => window.scrollY / window.innerHeight)
   .out();
