@@ -9,7 +9,7 @@ if (mediaQuery.matches) {
   setResolution(window.innerWidth, 2100);
 } else {
   //mobile
-  setResolution(window.innerWidth, 1200);
+  setResolution(window.innerWidth, 1275);
 }
 voronoi(25, 2, 10)
   .color(1, 1, 1)

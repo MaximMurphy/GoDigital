@@ -9,7 +9,7 @@ if (mediaQuery.matches) {
   setResolution(window.innerWidth, 2200);
 } else {
   //mobile
-  setResolution(window.innerWidth, 1300);
+  setResolution(window.innerWidth, 1370); //1300
 }
 shape(200, 0.607, 1.5)
   .scale(0.621, 0.49)
