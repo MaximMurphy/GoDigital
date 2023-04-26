@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="light">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,7 +22,6 @@
       href="favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="favicon/site.webmanifest" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,17 +29,45 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/hydra-synth"></script>
-    <title>🥷🏻🌋🔊</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <title>True North</title>
   </head>
-  <body scroll="no" style="overflow: hidden">
+  <body>
     <div class="container">
       <div class="animationContainer">
-        <script src="digitalScript.js" class="animation"></script>
+        <script src="../scripts/northScript.js" class="animation"></script>
       </div>
+
       <div class="title">
-        <a href="/" class="homeLink"><h1 class="titleText">GoDigital</h1></a>
+        <a href="../" class="homeLink"><h1 class="titleText">GoDigital</h1></a>
+      </div>
+      <div class="albumPage">
+        <a
+          href="https://music.apple.com/us/album/true-north-single/1669564089"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="../public/trueNorth.jpg" alt="True North Album Cover"
+        /></a>
+      </div>
+      <div class="albumInfo">
+        <p>Tracklist:</p>
+        <ol>
+          <li>True North</li>
+          <li>Onwards</li>
+        </ol>
+        <p>February 2, 2021</p>
+        <p>2 songs, 6 minutes</p>
       </div>
       <div class="space"></div>
+      <div id="footer"></div>
+      <script>
+        fetch("../footer.html")
+          .then((response) => response.text())
+          .then((html) => {
+            const footer = document.querySelector("#footer");
+            footer.innerHTML = html;
+          });
+      </script>
     </div>
   </body>
 </html>

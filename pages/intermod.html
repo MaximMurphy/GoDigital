@@ -22,7 +22,6 @@
       href="favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="favicon/site.webmanifest" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,23 +29,24 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/hydra-synth"></script>
+    <link rel="stylesheet" href="../styles.css" />
     <title>Intermod</title>
   </head>
   <body>
     <div class="container">
       <div class="animationContainer">
-        <script src="intermodScript.js" class="animation"></script>
+        <script src="../scripts/intermodScript.js" class="animation"></script>
       </div>
 
       <div class="title">
-        <a href="/" class="homeLink"><h1 class="titleText">GoDigital</h1></a>
+        <a href="../" class="homeLink"><h1 class="titleText">GoDigital</h1></a>
       </div>
       <div class="albumPage">
         <a
           href="https://music.apple.com/us/album/intermod/1596976820"
           target="_blank"
           rel="noopener noreferrer"
-          ><img src="public/intermod.jpg" alt="Intermod Album Cover"
+          ><img src="../public/intermod.jpg" alt="Intermod Album Cover"
         /></a>
       </div>
       <div class="albumInfo">
@@ -68,7 +68,7 @@
       <div class="space"></div>
       <div id="footer"></div>
       <script>
-        fetch("footer.html")
+        fetch("../footer.html")
           .then((response) => response.text())
           .then((html) => {
             const footer = document.querySelector("#footer");

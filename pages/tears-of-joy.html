@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,7 +22,6 @@
       href="favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="favicon/site.webmanifest" />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,44 +29,49 @@
       rel="stylesheet"
     />
     <script src="https://unpkg.com/hydra-synth"></script>
-    <title>True North</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Tears of Joy</title>
   </head>
   <body>
     <div class="container">
       <div class="animationContainer">
-        <script src="northScript.js" class="animation"></script>
+        <script src="../scripts/tearsScript.js" class="animation"></script>
       </div>
 
       <div class="title">
-        <a href="/" class="homeLink"><h1 class="titleText">GoDigital</h1></a>
+        <a href="../" class="homeLink"><h1 class="titleText">GoDigital</h1></a>
       </div>
       <div class="albumPage">
         <a
-          href="https://music.apple.com/us/album/true-north-single/1669564089"
+          href="https://music.apple.com/us/album/tears-of-joy-ep/1659146450"
           target="_blank"
           rel="noopener noreferrer"
-          ><img src="public/trueNorth.jpg" alt="True North Album Cover"
+          ><img src="../public/tearsOfJoy.jpg" alt="Tears of Joy Album Cover"
         /></a>
       </div>
       <div class="albumInfo">
         <p>Tracklist:</p>
         <ol>
-          <li>True North</li>
-          <li>Onwards</li>
+          <li>Silent Night (Unmastered)</li>
+          <li>O Holy Night</li>
+          <li>Happy Xmas</li>
+          <li>Somewhere In My Memory</li>
+          <li>Luminance</li>
         </ol>
-        <p>February 2, 2021</p>
-        <p>2 songs, 6 minutes</p>
+        <p>December 10, 2022</p>
+        <p>5 songs, 14 minutes</p>
       </div>
       <div class="space"></div>
       <div id="footer"></div>
       <script>
-        fetch("footer.html")
+        fetch("../footer.html")
           .then((response) => response.text())
           .then((html) => {
             const footer = document.querySelector("#footer");
             footer.innerHTML = html;
           });
       </script>
+      <div></div>
     </div>
   </body>
 </html>
