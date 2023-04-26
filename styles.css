@@ -134,6 +134,10 @@ a:active {
   .friendsInfo {
     font-size: 1.5rem;
   }
+
+  .hiddenText {
+    display: none;
+  }
 }
 
 /* Mobile */
@@ -155,5 +159,9 @@ a:active {
   .friendsInfo {
     font-size: 1.2rem;
     width: 80%;
+  }
+
+  .hiddenText {
+    font-size: 0.4rem;
   }
 }

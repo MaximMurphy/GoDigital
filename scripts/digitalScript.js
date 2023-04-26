@@ -14,15 +14,12 @@ if (mediaQuery.matches) {
 }
 
 const video = document.getElementById("video");
-const canvas = document.getElementById("canvas");
 
 navigator.mediaDevices
   .getUserMedia({ video: true, audio: false })
   .then((stream) => {
     s0.initCam(() => {
       // Start video stream
-      cameraView.srcObject = stream;
-      cameraView.play();
       video.srcObject = s0.src;
       video.play();
     });
@@ -32,22 +29,10 @@ navigator.mediaDevices
     alert(err);
   });
 
-function loop() {
-  // Draw current video frame to canvas
-  canvas.getContext("2d").drawImage(video, 0, 0, canvas.width, canvas.height);
-
-  // Apply Hydra effects to canvas
-  hydra.setSource(canvas);
-  // Add Hydra code here
-
-  // Request next frame
-  requestAnimationFrame(loop);
-}
-
-// Start loop
-requestAnimationFrame(loop);
+s0.initCam();
 
 src(s0)
-  .modulateScale(osc(8).rotate(Math.sin(time)), 0.5)
-
+  .scale(0.7)
+  .pixelate(150, 150)
+  .modulateScale(osc(6).rotate(Math.sin(time)), 0.2)
   .out();

@@ -12,6 +12,7 @@ if (mediaQuery.matches) {
   //mobile
   setResolution(window.innerWidth, 835);
 }
+
 osc(10, 0.1, 2)
   .modulate(
     noise(2, 0.1)
