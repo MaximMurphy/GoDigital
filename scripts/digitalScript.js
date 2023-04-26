@@ -13,10 +13,16 @@ if (mediaQuery.matches) {
   setResolution(window.innerWidth, window.innerHeight);
 }
 
+const video = document.getElementById("video");
+
 navigator.mediaDevices
   .getUserMedia({ video: true, audio: false })
   .then((stream) => {
-    s0.initCam();
+    s0.initCam(() => {
+      // Start video stream
+      video.srcObject = s0.src;
+      video.play();
+    });
   })
   .catch((error) => {
     // Handle the error
