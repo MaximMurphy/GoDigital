@@ -1,16 +1,18 @@
 // create a new hydra-synth instance
 var hydra = new Hydra({ detectAudio: false });
 
-const mediaQuery = window.matchMedia("(min-width: 768px)");
-
-if (mediaQuery.matches) {
+//checking for screen size
+if (window.matchMedia("(min-width: 950px)").matches) {
+  //bigger screens
+  setResolution(window.innerWidth, 2300);
+} else if (window.matchMedia("(min-width: 701px)").matches) {
   //desktop
-  console.log("Media Query Matched!");
-  setResolution(window.innerWidth, 2100);
+  setResolution(window.innerWidth, 2200);
 } else {
   //mobile
-  setResolution(window.innerWidth, 1275);
+  setResolution(window.innerWidth, 1350);
 }
+
 voronoi(25, 1, 12)
   .pixelate(200, 200)
   .color(1, 1, 1)

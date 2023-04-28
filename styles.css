@@ -105,15 +105,61 @@ a:active {
   color: var(--text-color);
 }
 
+.albumTracklist {
+  z-index: 2;
+}
+
+/* Mobile */
+@media only screen and (max-width: 700px) {
+  .title {
+    font-size: 6vw;
+  }
+  .albumPage img,
+  .albumCovers img {
+    width: 250px;
+    height: 250px;
+    padding-top: 10px;
+  }
+
+  .albumTracklist img {
+    width: 300px;
+    height: 400px;
+  }
+
+  iframe {
+    width: 80vw;
+    height: 71vh;
+  }
+
+  .friendsInfo {
+    font-size: 1.2rem;
+    width: 80%;
+  }
+
+  .hiddenMobile {
+    display: none;
+  }
+
+  .space {
+    margin-bottom: 8vh;
+  }
+}
+
 /* Desktop */
 @media (min-width: 701px) {
   .title {
     font-size: 4vw;
   }
-  img {
+  .albumPage img,
+  .albumCovers img {
     width: 500px;
     height: 500px;
     padding-top: 10px;
+  }
+
+  .albumTracklist img {
+    width: 600px;
+    height: 800px;
   }
 
   .albumInfo {
@@ -140,28 +186,43 @@ a:active {
   }
 }
 
-/* Mobile */
-@media only screen and (max-width: 700px) {
+/* Bigger Screens */
+@media (min-width: 950px) {
   .title {
-    font-size: 6vw;
+    font-size: 4vw;
   }
-  img {
-    width: 250px;
-    height: 250px;
+  .albumPage img,
+  .albumCovers img {
+    width: 500px;
+    height: 500px;
     padding-top: 10px;
   }
 
+  .albumTracklist img {
+    width: 600px;
+    height: 800px;
+  }
+
+  .albumInfo {
+    font-size: 1.5rem;
+  }
+  #footer {
+    font-size: 1.5rem;
+  }
+  .space {
+    margin-bottom: 5vh;
+  }
+
   iframe {
-    width: 80vw;
-    height: 71vh;
+    width: 560px;
+    height: 1000px;
   }
 
   .friendsInfo {
-    font-size: 1.2rem;
-    width: 80%;
+    font-size: 1.5rem;
   }
 
-  .hiddenMobile {
+  .hiddenDesktop {
     display: none;
   }
 }

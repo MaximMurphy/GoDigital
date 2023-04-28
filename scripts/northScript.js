@@ -2,16 +2,17 @@
 var hydra = new Hydra({ detectAudio: false });
 
 // checking for screen size
-const mediaQuery = window.matchMedia("(min-width: 768px)");
-
-if (mediaQuery.matches) {
+if (window.matchMedia("(min-width: 950px)").matches) {
+  //bigger screens
+  setResolution(window.innerWidth, 2300);
+} else if (window.matchMedia("(min-width: 701px)").matches) {
   //desktop
-  console.log("Media Query Matched!");
-  setResolution(window.innerWidth, 2075);
+  setResolution(window.innerWidth, 2200);
 } else {
   //mobile
-  setResolution(window.innerWidth, 1260); //1255
+  setResolution(window.innerWidth, 1350);
 }
+
 osc(20, 0.01, 1.1)
   .kaleid(5)
   .color(1, 0.35, 0.25)
