@@ -187,7 +187,7 @@ a:active {
 }
 
 /* Bigger Screens */
-@media (min-width: 950px) {
+@media (min-width: 1513px) {
   .title {
     font-size: 4vw;
   }

@@ -2,12 +2,18 @@
 var hydra = new Hydra({ detectAudio: false });
 
 // checking for screen size
-if (window.matchMedia("(min-width: 950px)").matches) {
+if (window.matchMedia("(min-width: 1513px)").matches) {
   //bigger screens
-  setResolution(window.innerWidth, 2300);
+  setResolution(window.innerWidth, 2400);
+  window.onresize = function () {
+    location.reload();
+  };
 } else if (window.matchMedia("(min-width: 701px)").matches) {
   //desktop
-  setResolution(window.innerWidth, 2200);
+  setResolution(window.innerWidth, 2300);
+  window.onresize = function () {
+    location.reload();
+  };
 } else {
   //mobile
   setResolution(window.innerWidth, 1350);

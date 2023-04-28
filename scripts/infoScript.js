@@ -1,13 +1,18 @@
 // create a new hydra-synth instance
 var hydra = new Hydra({ detectAudio: false });
 
-// Create a condition that targets viewports at least 768px wide
-const mediaQuery = window.matchMedia("(min-width: 768px)");
-
-if (mediaQuery.matches) {
+if (window.matchMedia("(min-width: 1513px)").matches) {
+  //bigger screens
+  setResolution(window.innerWidth, 1450);
+  window.onresize = function () {
+    location.reload();
+  };
+} else if (window.matchMedia("(min-width: 701px)").matches) {
   //desktop
-  console.log("Media Query Matched!");
-  setResolution(window.innerWidth, 1300);
+  setResolution(window.innerWidth, 1325);
+  window.onresize = function () {
+    location.reload();
+  };
 } else {
   //mobile
   setResolution(window.innerWidth, 950);

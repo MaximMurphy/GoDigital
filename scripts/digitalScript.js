@@ -8,9 +8,6 @@ if (mediaQuery.matches) {
   //desktop
   console.log("Media Query Matched!");
   setResolution(window.innerWidth, window.innerHeight);
-} else {
-  //mobile
-  setResolution(window.innerWidth, window.innerHeight);
 }
 
 const video = document.getElementById("video");
