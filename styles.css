@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 45px;
+  gap: 15px;
 }
 
 a:link,
@@ -76,14 +76,72 @@ a:active {
 .albumInfo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
+  align-items: center;
   background-color: var(--bg-color);
   color: silver;
   padding: 2vw;
   border: 5px solid silver;
   border-radius: 15px;
   z-index: 2;
+  max-width: 400px; /* Set a max-width for better layout control */
+  margin: 20px auto 10px; /* Reduce bottom margin to bring footer closer */
+}
+
+.albumInfo h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.green-title {
+  color: green;
+}
+
+.red-title {
+  color: red;
+}
+
+.tracklist {
+  list-style-type: none; /* Hides the numbers */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  margin-bottom: 20px;
+}
+
+.tracklist li {
+  margin: 5px 0;
+}
+
+.quickInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.quickInfo p {
+  margin: 0;
+  padding: 0;
+}
+
+.albumLinks {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.albumLinks a {
+  text-decoration: none;
+  color: silver;
+  border: 2px solid silver;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.albumLinks a:hover {
+  background-color: silver;
+  color: var(--bg-color);
 }
 
 .friendsInfo {
@@ -103,6 +161,7 @@ a:active {
 
 #footer {
   color: var(--text-color);
+  margin-top: 0; /* Set to 0 or adjust as needed */
 }
 
 .albumTracklist {

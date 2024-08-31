@@ -3,19 +3,19 @@ var hydra = new Hydra({ detectAudio: false });
 
 if (window.matchMedia("(min-width: 1513px)").matches) {
   //bigger screens
-  setResolution(window.innerWidth, 2450);
+  setResolution(window.innerWidth, 3200);
   window.onresize = function () {
     location.reload();
   };
 } else if (window.matchMedia("(min-width: 701px)").matches) {
   //desktop
-  setResolution(window.innerWidth, 2350);
+  setResolution(window.innerWidth, 3000);
   window.onresize = function () {
     location.reload();
   };
 } else {
   //mobile
-  setResolution(window.innerWidth, 1400);
+  setResolution(window.innerWidth, 1700);
 }
 
 noise(10)

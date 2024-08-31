@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Orbitron:wght@700&family=Quantico:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/hydra-synth"></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Fear Is The Mind Killer</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="animationContainer tall-animation">
+        <script src="../scripts/fearScript.js" class="animation"></script>
+      </div>
+
+      <div class="title">
+        <a href="../" class="homeLink"><h1 class="titleText">GoDigital</h1></a>
+      </div>
+      <div class="albumPage">
+        <img
+          src="../public/fear.JPG"
+          alt="Fear Is The Mind Killer Album Cover"
+        />
+      </div>
+
+      <div class="albumInfo">
+        <a
+          href="https://music.apple.com/us/album/fear-is-the-mind-killer/1765386768"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><h2 class="red-title">Fear Is The Mind Killer 🔇</h2></a
+        >
+
+        <ol class="tracklist">
+          <li>Back To Reality</li>
+          <li>Potion Seller</li>
+          <li>123</li>
+          <li>Weapons 2</li>
+          <li>Calculus Of Power</li>
+          <li>Arakeen Trap</li>
+          <li>Giedi Prime Club Music</li>
+          <li>Wilson Odobert</li>
+          <li>Solidity</li>
+          <li>No Sound</li>
+        </ol>
+
+        <div class="quickInfo">
+          <p>August 30, 2024</p>
+          <p>10 songs, 26 minutes</p>
+        </div>
+
+        <div class="albumLinks">
+          <a
+            href="https://music.apple.com/us/album/fear-is-the-mind-killer/1765386768"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Apple Music</a
+          >
+          <a
+            href="https://open.spotify.com/album/0Gap2HiKwIUbXl7ZqMXAhE?si=Lu6TrZiQSZit67O_TGjOgg"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Spotify</a
+          >
+        </div>
+      </div>
+
+      <div class="space"></div>
+      <div id="footer"></div>
+      <script>
+        fetch("../footer.html")
+          .then((response) => response.text())
+          .then((html) => {
+            const footer = document.querySelector("#footer");
+            footer.innerHTML = html;
+          });
+      </script>
+      <div></div>
+    </div>
+  </body>
+</html>
